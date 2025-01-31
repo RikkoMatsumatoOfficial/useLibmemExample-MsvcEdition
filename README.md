@@ -1,0 +1,2 @@
+# useLibmemExample-MsvcEdition
+useLibmemExample-MsvcEdition by RikkoMatsumatoOfficial
