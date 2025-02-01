@@ -1,2 +1,2 @@
 # useLibmemExample-MsvcEdition
-useLibmemExample-MsvcEdition by RikkoMatsumatoOfficial
+This is Just Example to use Libmem via MSVC!!! So Enjoy to use this!!!
