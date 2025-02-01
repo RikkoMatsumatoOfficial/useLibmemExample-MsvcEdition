@@ -1,6 +1,7 @@
 #include <libmem/libmem.h>
 #include <Windows.h>
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -10,10 +11,13 @@ int main()
 
 	boolk = LM_FindProcess("Mad Island.exe", &proc);
 	if (!boolk) {
+		cout << "Not Founded Mad Island Process" << endl;
 		exit(1223);
 	}
 	else {
-		LM_FindModule("mono-2.0-bdwgc.dll", &mod);
+		LM_GetProcessEx(proc.pid, &proc);
+		LM_FindModuleEx(&proc, "mono-2.0-bdwgc.dll", &mod);
+		std::cout << "Mono Address: " << (void*)mod.size << std::endl;
 		exit(344);
 	}
 	return -1;
